@@ -1,0 +1,42 @@
+[tool.poetry]
+name = "winhacks2025"
+version = "0.1.0"
+description = ""
+authors = ["bellflwr <70229194+bellflwr@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+flask = "^3.1.0"
+
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.9.6"
+mypy = "^1.15.0"
+
+
+[tool.ruff.lint]
+select = [
+    # pycodestyle
+    "E",
+    # Pyflakes
+    "F",
+    # pyupgrade
+    "UP",
+    # flake8-bugbear
+    "B",
+    # flake8-simplify
+    "SIM",
+    # isort
+    "I",
+    # pep8-naming
+    "N",
+    # flake8-builtins
+    "A",
+    # flake8-type-checking
+    "TC"
+]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
