@@ -19,7 +19,7 @@
 <div class="recipe-container">
 	{% for i in range(10) %}
 	<div class="recipe outlined">
-		<div class="recipe-image">
+		<div>
 			<img src="/static/images/cooking.jpg" alt="">
 		</div>
 		<div class="text-container">
@@ -27,5 +27,42 @@
 		</div>
 	</div>
 	{% endfor %}
+	<dialog id="recipeModal" class="modal">
+		<div class="modal-content">
+			<span class="close">&times;</span>
+			<div class="content-container">
+				<div class="content-container-vertical">
+					<div class="text-container">
+						<p class="bigger">Name</p>
+					</div>
+					<div class="text-container">
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet autem repellendus a aliquid molestiae ipsam, eius dignissimos alias dolorem laudantium fuga animi, voluptas corrupti facilis iure officiis soluta sunt. Nam.</p>
+					</div>
+					<div class="text-container">
+						<p>Recipe Requirement: </p>
+					</div>
+					<div class="text-container">
+						<p>Ingredients: </p>
+					</div>
+					<div class="text-container">
+						<p>Source: </p>
+					</div>
+				</div>
+				<div class="content-container-vertical">
+					<img src="/static/images/cooking.jpg" alt="" class="recipe-image">
+					<div class="text-container">
+						<p>Difficulty: </p>
+					</div>
+					<div class="text-container">
+						<p>Average Time: </p>
+					</div>
+					<div class="text-container">
+						<p>XP Gained: </p>
+					</div>
+					<button class="start">Start</button>
+				</div>
+			</div>
+		</div>
+	</dialog>
 </div>
 {% endblock %}
