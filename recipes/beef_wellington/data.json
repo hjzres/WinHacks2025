@@ -2,12 +2,12 @@
 {
     "official" : true,
     "name" : "Beef Wellington",
-    "recipe_requirements" : ["Red Wine Sauce"],
+    "recipe_requirements" : [],
     "description" : "",
-    "total_time" : 0,
-    "xp_level" : 0,
-    "difficulty" : "",
-    "ingredients" : ["2x 400g Beef Fillets", "Red Wine Sauce", "Olive Oil", "500g Mixture of Wild Mushrooms", "1 Thyme Sprig, Leaves Only", "500g puff pastry", "8 slices of Parma ham", "2 egg yolks beaten with 1 tbsp of water and a pinch of salt", "Sea salt", "Black pepper"],
+    "total_time" : 60,
+    "xp_level" : 500,
+    "difficulty" : "Hard",
+    "ingredients" : ["2x 400g beef fillets", "Red wine sauce", "Olive oil", "500g mixture of wild mushrooms", "1 thyme sprig (only leaves)", "500g puff pastry", "8 slices of Parma ham", "2 beaten egg yolks", "Sea salt", "Black pepper"],
     "source" : "https://www.gordonramsay.com/gr/recipes/beef-wellington",
     "cover_image" : "Beef_Wellington.jpg",
 
@@ -26,13 +26,13 @@
         },
 
         {
-            "instruction" : "Make the mushroom paste, known as duxelle, by finely chopping mushrooms and putting them into a hot pan with olive oil, thyme leaves and seasonning. Leave mushrooms on pan until all moisture has evaporated.",
+            "instruction" : "Make the mushroom paste by finely chopping mushrooms and putting them into a hot pan with olive oil, thyme leaves and seasoning until all moisture is evaporated.",
             "timer" : 10,
             "image" : "Duxelle.jpg"
         },
 
         {
-            "instruction" : "Cut the pastry in half and place on a lightly floured surface and chill in the refrigerator until cooled.",
+            "instruction" : "Cut the pastry in half and it place on a lightly floured surface and chill in the refrigerator until cooled.",
             "timer" : null,
             "image" : "Beef_Flour.jpg"
         },
@@ -56,7 +56,7 @@
         },
 
         {
-            "instruction" : "Cook the wellington at 392 degrees Fahrenheit for 15-20 minutes.",
+            "instruction" : "Cook the wellington at 392 degrees Fahrenheit for 15-20 minutes and serve when cooled.",
             "timer" : 20,
             "image" : "Beef_Wellington_Again.jpg"
         }

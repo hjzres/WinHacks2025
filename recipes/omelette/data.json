@@ -2,12 +2,12 @@
 {
     "official" : true,
     "name" : "Omelette",
-    "recipe_requirements" : ["Optional Ingredients"],
+    "recipe_requirements" : ["Optional ingredients"],
     "description" : "This recipe is a nice refresher on a classic recipe done for years, an omelette! Check out this recipe to try it out or maybe add some steps to your existing routine.",
     "total_time" : 10,
     "xp_level" : 100,
     "difficulty" : "Easy",
-    "ingredients" : ["3 Eggs", "1/4 Cup of Milk", "Optional Ingredients", "Condiments", "Oil"],
+    "ingredients" : ["3 Eggs", "1/4 Cup of milk", "Optional ingredients", "Condiments", "Oil"],
     "source" : "",
     "cover_image" : "Omelette.jpg",
 
@@ -20,7 +20,7 @@
         },
 
         {
-            "instruction" : "Put oil in a skillet and heat to medium temperature. In the meantime, if you have any other ingredients you wish to include like meats or vegetables into your omelette, prepare them and put them into the skillet when heated.",
+            "instruction" : "Put oil in a skillet and heat to medium temperature. Once heated, add any extra ingredients you would like to include.",
             "timer" : null,
             "image" : "Omelette_Vegetables.jpg"
         },

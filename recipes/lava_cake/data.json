@@ -7,7 +7,7 @@
     "total_time" : 30,
     "xp_level" : 200,
     "difficulty" : "Medium",
-    "ingredients" : ["26x 1 Ounce Semi-Sweet Chocolate", "2 Cups of Butter (cut into 8 pieces)", "12 Large Eggs", "1 and 1/3 Cups of Sugar", "8 Tablespoons of All-Purpose Flour", "16 Teaspoons of Unsweetened Cocoa Power", "4 Pinches of Salt", "4 Ramekins"],
+    "ingredients" : ["26x 1 Ounce semi-sweet chocolate", "2 Cups of butter (cut into 8 pieces)", "12 Large eggs", "1 and 1/3 Cups of sugar", "8 Tablespoons of all-purpose flour", "16 Teaspoons of unsweetened cocoa power", "4 Pinches of salt", "4 ramekins"],
     "source" : "https://www.allrecipes.com/recipe/276304/lava-cake/",
     "cover_image" : "Lava_Cake.jpg",
 
@@ -20,14 +20,20 @@
         },
 
         {
-            "instruction" : "Place chocolate and butter in the top of a double boiler over simmering water. Stir frequently and avoid scorching of the chocolate until it is melted. Stir for about 5 minutes, scraping down the sides of the rubber spatula.",
+            "instruction" : "Place chocolate and butter in the top of a double boiler over simmering water. Stir frequently and avoid scorching of the chocolate until it is melted. Stir for about 5 minutes.",
             "timer" : 5,
             "image" : "Double_Boiler.jpg"
         },
 
         {
-            "instruction" : "Combine the eggs and sugar into a bowl, and mix for 5 minutes until the mixture is pale and thick. Once mixed, add in the melted chocolate, flour, cocoa powder, and a pinch of salt and mix until combined. Pour the batter into the ramekins.",
+            "instruction" : "Combine the eggs and sugar into a bowl, and mix for 5 minutes until the mixture is pale and thick.",
             "timer" : 5,
+            "image" : "Ramekin_Batter.jpg"
+        },
+
+        {
+            "instruction" : "Once mixed, add in the melted chocolate, flour, cocoa powder, and a pinch of salt and mix until combined. Pour the batter into the ramekins.",
+            "timer" : null,
             "image" : "Ramekin_Batter.jpg"
         },
 

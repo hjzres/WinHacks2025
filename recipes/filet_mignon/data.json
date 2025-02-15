@@ -3,11 +3,11 @@
     "official" : true,
     "name" : "Filet Mignon",
     "recipe_requirements" : [],
-    "description" : "The filet mignon steak is a typically smaller portion taken from the smaller loins of tenderloin, and requires great precision and timing to prepare correctly. This steak can be cooked to reach rare, medium-rare, medium, medium-well, and well-done, with medium rare being the most popular option for this dish. This recipe requires patience, but can be done well if enough attention is given!",
+    "description" : "The filet mignon steak is a typically smaller portion taken from the smaller loins of tenderloin, and requires great precision and timing to prepare correctly. This steak is usually cooked to medium rare, being the most popular option for this dish. This recipe requires patience, but can be done well if enough attention and care is given!",
     "total_time" : 25,
     "xp_level" : 450,
     "difficulty" : "Hard",
-    "ingredients" : ["Filet Mignon Cut", "Olive Oil", "Kosher Salt", "Pepper", "Butter", "Garlic", "Rosemary"],
+    "ingredients" : ["Filet mignon cut", "Olive oil", "Kosher salt", "Pepper", "Butter", "Garlic", "Rosemary"],
     "source" : "https://whitneybond.com/filet-mignon/",
     "cover_image" : "Filet_Mignon.jpg",
 
@@ -32,7 +32,13 @@
         },
 
         {
-            "instruction" : "Preheat an oven to 400 degrees Fahrenheit. Take the skillet off the stove, and add rosemary, butter and garlic to the skillet with the steaks still within. Cook for 10 minutes until you have a medium-rare steak for best results. Otherwise, cook 2 minutes less or more depending on what you prefer.",
+            "instruction" : "Preheat an oven to 400 degrees Fahrenheit.",
+            "timer" : null,
+            "image" : "Oven.jpg"
+        },
+
+        {
+            "instruction" : "Take the skillet off the stove and add rosemary, butter and garlic to the skillet with the steaks still within. Cook for 10 minutes until you have a medium-rare steak.",
             "timer" : 10,
             "image" : "Filet_Mignon_Medium_Rare.jpg"
         },

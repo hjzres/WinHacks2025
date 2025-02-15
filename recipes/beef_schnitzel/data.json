@@ -3,30 +3,30 @@
     "official" : true,
     "name" : "Beef Schnitzel",
     "recipe_requirements" : [],
-    "description" : "Treat yourself with a delicious and simple recipe for beef schnitzel, which can also be applied to any kind of meat. Be careful while working however, as oil may bounce out of your skillet if it is too hot!",
+    "description" : "Treat yourself with a delicious and simple recipe of beef schnitzel, which can also be applied to any kind of meat. Be careful while working however, as oil may fly out of your skillet if it is too hot!",
     "total_time" : 30,
-    "xp_level" : 200,
+    "xp_level" : 225,
     "difficulty" : "Easy",
-    "ingredients" : ["5 Thinly Cut Steaks", "2 Ounces of All-Purpose Flower", "2 Paprika Teaspoons", "2 Lightly Beaten Eggs", "9 Ounces of Dried Breadcrumbs", "5 Teaspoons of Olive Oil", "5 Teaspoons of Olive Oil"],
+    "ingredients" : ["5 thinly cut steaks", "2 ounces of all-purpose flower", "2 paprika teaspoons", "2 lightly beaten eggs", "9 ounces of dried breadcrumbs", "5 teaspoons of olive oil", "5 teaspoons of olive oil"],
     "source" : "https://www.food.com/recipe/beef-schnitzel-472051",
     "cover_image" : "Beef_Schnitzel.jpg",
 
     "steps" : 
     [
         {
-            "instruction" : "Put steaks between two plastic wraps, covering the top and bottom of the steaks. Bash the steaks until they are flat and thin.",
+            "instruction" : "Put the steaks between two plastic wraps, covering the top and bottom of the steaks. Bash the steaks until they are flat and thin.",
             "timer" : null,
             "image" : "Thin_Steak.jpg"
         },
 
         {
-            "instruction" : "Crack the eggs into one plate, the breadcrumbs in another, and the flour mixed with paprika, salt, and pepper into another plate.",
+            "instruction" : "Crack the eggs into one plate, put the breadcrumbs in another, and mix the flour with paprika, salt, and pepper into another plate.",
             "timer" : null,
             "image" : "Beef_Schnitzel.jpg"
         },
 
         {
-            "instruction" : "Dip a steak first into flour, then the eggs, then the breadcrumbs, and put it into a large frying pan containing olive oil at a low heat to prevent oil jumping. Let it cook for 1 minute on each side. Repeat for all other steaks.",
+            "instruction" : "Dip a steak into flour, then the eggs, then the breadcrumbs, and put it into a large frying pan containing olive oil at a low heat to prevent oil jumping. Let it cook for 1 minute on each side and repeat for all other steaks.",
             "timer" : 2,
             "image" : "Frying_Schnitzels.jpg"
         }
