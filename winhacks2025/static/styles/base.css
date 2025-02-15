@@ -1,17 +1,17 @@
 html, body{
-	height: 100%;
+	height: 100vh;
 }
 
 body{
 	background-color: #f3ede3;
 	font-family: "Inter", sans-serif;
-	color: #EEEEEE;
+	color: black;
 	
 	margin: 2rem 4rem 0 4rem;
 }
 
 #main{
-	width: 100%;
+	width: 100vw;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -20,4 +20,20 @@ body{
 a {
 	text-decoration: none;
 	color: inherit;
+}
+
+img{
+	width:50vw;
+	height:60vh;
+	margin: 1rem;
+}
+
+.content-container{
+	display: flex;
+	align-items: flex-start;
+}
+
+.content-container img {
+	max-width: 100vw;
+	height:auto;
 }
