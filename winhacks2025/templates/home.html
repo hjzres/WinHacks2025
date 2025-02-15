@@ -6,4 +6,26 @@
 		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut vitae ullam maxime odio numquam eos cum nesciunt, sit tenetur distinctio non deserunt labore corporis aliquam. Perferendis possimus in alias optio?</p>
 	</div>
 </div>
+<br>
+
+<div class="content-container">
+	<div class="text-container">
+		<p class="bigger">Recipes: </p>
+	</div>
+	<div class="text-container">
+		<p class="bigger">These are some recipes</p>
+	</div>
+</div>
+<div class="recipe-container">
+	{% for i in range(10) %}
+	<div class="recipe outlined">
+		<div class="recipe-image">
+			<img src="/static/images/cooking.jpg" alt="">
+		</div>
+		<div class="text-container">
+			<p>Name</p>
+		</div>
+	</div>
+	{% endfor %}
+</div>
 {% endblock %}
