@@ -1,0 +1,64 @@
+
+{
+    "official" : true,
+    "name" : "Beef Wellington",
+    "recipe_requirements" : [],
+    "description" : "",
+    "total_time" : 60,
+    "xp_level" : 500,
+    "difficulty" : "Hard",
+    "ingredients" : ["2x 400g beef fillets", "Red wine sauce", "Olive oil", "500g mixture of wild mushrooms", "1 thyme sprig (only leaves)", "500g puff pastry", "8 slices of Parma ham", "2 beaten egg yolks", "Sea salt", "Black pepper"],
+    "source" : "https://www.gordonramsay.com/gr/recipes/beef-wellington",
+    "cover_image" : "Beef_Wellington.jpg",
+
+    "steps" : 
+    [
+        {
+            "instruction" : "Wrap each piece of beef tightly in a triple layer of cling film to set its shape and let it chill over night.",
+            "timer" : null,
+            "image" : "Fridge_Beef.jpg"
+        },
+
+        {
+            "instruction" : "Remove the cling film and sear the beef fillet for 30-60 seconds until browned all over and rare in the middle.",
+            "timer" : 1,
+            "image" : "Wellington_Searing.jpg"
+        },
+
+        {
+            "instruction" : "Make the mushroom paste by finely chopping mushrooms and putting them into a hot pan with olive oil, thyme leaves and seasoning until all moisture is evaporated.",
+            "timer" : 10,
+            "image" : "Duxelle.jpg"
+        },
+
+        {
+            "instruction" : "Cut the pastry in half and it place on a lightly floured surface and chill in the refrigerator until cooled.",
+            "timer" : null,
+            "image" : "Beef_Flour.jpg"
+        },
+
+        {
+            "instruction" : "Lay a large sheet of cling film on a cutting surface and place 4 slices of Parma ham in the middle, slightly overlapping them to make a square. Then, spread the duxelle over the ham.",
+            "timer" : null,
+            "image" : "Parma_Ham.jpg"
+        },
+        
+        {
+            "instruction" : "Season the beef filets and place them on top of the ham. Grab the cling film and using it, roll the Parma ham over the beef until you get an even log.",
+            "timer" : null,
+            "image" : "Wellington.jpg"
+        },
+
+        {
+            "instruction" : "Brush the pastry with the egg wash. Remove the cling film and wrap the pastry around the ham-wrapped filet. Cover and chill them for 30 minutes.",
+            "timer" : 30,
+            "image" : "Wellington_Thang.jpg"
+        },
+
+        {
+            "instruction" : "Cook the wellington at 392 degrees Fahrenheit for 15-20 minutes and serve when cooled.",
+            "timer" : 20,
+            "image" : "Beef_Wellington_Again.jpg"
+        }
+    ]
+}

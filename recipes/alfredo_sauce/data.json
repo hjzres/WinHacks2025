@@ -1,0 +1,40 @@
+
+{
+    "official" : true,
+    "name" : "Alfredo Sauce",
+    "recipe_requirements" : [],
+    "description" : "An easy recipe to make alfredo sauce, that can be served or used with any type of pasta!",
+    "total_time" : 10,
+    "xp_level" : 100,
+    "difficulty" : "Easy",
+    "ingredients" : ["Parmesan cheese", "Butter", "Heavy cream", "Garlic", "Italian seasonings"],
+    "source" : "https://bellyfull.net/homemade-alfredo-sauce/",
+    "cover_image" : "Cover_Image_Alfredo.jpg",
+
+    "steps" : 
+    [
+        {
+            "instruction" : "Add butter and cream to a non-stick pan over medium heat until the butter is fully melted.",
+            "timer" : null,
+            "image" : "Butter.jpg"
+        },
+        
+        {
+            "instruction" : "Add garlic, italian seasonings, salt and pepper into the pan and stir until thoroughly mixed.",
+            "timer" : null,
+            "image" : "Seasoning.jpg"
+        },
+
+        {
+            "instruction" : "Simmer and cook for 3-4 minutes until the sauce is thickened.",
+            "timer" : 4,
+            "image" : "Cover_Image_Alfredo.jpg"
+        },
+
+        {
+            "instruction" : "Once thickened, add parmesan cheese into the mixture and stir.",
+            "timer" : null,
+            "image" : "Parmesan.jpg"
+        }
+    ]
+}

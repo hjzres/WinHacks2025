@@ -1,0 +1,22 @@
+
+{
+    "official" : null,
+    "name" : "",
+    "recipe_requirements" : [],
+    "description" : "",
+    "total_time" : 0,
+    "xp_level" : 0,
+    "difficulty" : "",
+    "ingredients" : [],
+    "source" : "",
+    "cover_image" : "",
+
+    "steps" : 
+    [
+        {
+            "instruction" : "",
+            "timer" : 0,
+            "image" : ""
+        }
+    ]
+}
