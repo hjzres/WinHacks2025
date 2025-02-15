@@ -1,0 +1,40 @@
+
+{
+    "official" : true,
+    "name" : "Chicken Alfredo",
+    "recipe_requirements" : [],
+    "description" : "An easy recipe to make alfredo sauce, to be used with any type of pasta!",
+    "total_time" : 10,
+    "xp_level" : 100,
+    "difficulty" : "Easy",
+    "ingredients" : ["Parmesan Cheese", "Butter", "Heavy Cream", "Garlic", "Italian Seasonings"],
+    "source" : "https://bellyfull.net/homemade-alfredo-sauce/",
+    "cover_image" : "Cover_Image_Alfredo.jpg",
+
+    "steps" : 
+    [
+        {
+            "instruction" : "Add butter and cream to non-stick pan over medium heat until butter is fully melted.",
+            "timer" : null,
+            "image" : "Butter.jpg"
+        },
+        
+        {
+            "instruction" : "Add garlic, italian seasonings, salt and pepper into pan and stir until mixed.",
+            "timer" : null,
+            "image" : "Seasoning.jpg"
+        },
+
+        {
+            "instruction" : "Simmer and cook for 3-4 minutes until the sauce is thickened.",
+            "timer" : 4,
+            "image" : "Cover_Image_Alfredo.jpg"
+        },
+
+        {
+            "instruction" : "Once thickened, add parmesan cheese into mixture and stir.",
+            "timer" : null,
+            "image" : "Parmesan.jpg"
+        }
+    ]
+}

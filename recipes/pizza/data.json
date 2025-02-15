@@ -1,0 +1,46 @@
+
+{
+    "official" : true,
+    "name" : "Pizza",
+    "recipe_requirements" : [],
+    "description" : "Create your own homemade pizza dough and customize it with any ingredients that you desire!",
+    "total_time" : 40,
+    "xp_level" : 250,
+    "difficulty" : "Medium",
+    "ingredients" : ["Active Dry Yeast", "Sugar", "All-Purpose Flour", "Tomato Sauce", "Dried Oregano", "Dried Basil", "Mozzarella", "Toppings"],
+    "source" : "https://www.tasteofhome.com/recipes/homemade-pizza/",
+    "cover_image" : "Pizza.jpg",
+
+    "steps" : 
+    [
+        {
+            "instruction" : "Dissolve the yeast and sugar with warm water in a large bowl. Let it rest for 5 minutes before adding oil and salt to the mixture. After 5 minutes, add one cup of flower at a time and mix until a soft dough is formed.",
+            "timer" : 5,
+            "image" : "Pizza_Dough.jpg"
+        },
+
+        {
+            "instruction" : "Start flattening the dough into a circular shape using your hands. Once circular, put dough onto non-stick cooking tray.",
+            "timer" : null,
+            "image" : "Flattened_Pizza_Dough.jpg"
+        },
+
+        {
+            "instruction" : "Mix tomato sauce with dried oregano and basil in a separate bowl. Once thoroughly mixed, apply and spread onto pizza dough. Leave some room empty around edges to have crust. Afterwards, turn oven on to 400 degrees Farenheit.",
+            "timer" : null,
+            "image" : "Pizza_Tomato_Sauce.jpg"
+        },
+
+        {
+            "instruction" : "Apply shredded mozarella cheese to pizza, covering all tomato sauce. Afterwards, add any other toppings that you want to the pizza.",
+            "timer" : null,
+            "image" : "Pizza_Toppings.jpg"
+        },
+
+        {
+            "instruction" : "Bake pizza for 25-30 minutes, until crust is lightly browned.",
+            "timer" : 30,
+            "image" : "Pizza.jpg"
+        }
+    ]
+}
