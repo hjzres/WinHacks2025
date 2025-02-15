@@ -1,0 +1,22 @@
+
+{
+    "official" : true,
+    "name" : "Beef Schnitzel",
+    "recipe_requirements" : null,
+    "description" : "Treat yourself with a delicious and simple recipe for beef schnitzel, which can also be applied to any kind of meat. Be careful while working however, as oil may bounce out of your skillet if it is too hot!",
+    "total_time" : 30,
+    "xp_level" : 200,
+    "difficulty" : "Easy",
+    "ingredients" : [],
+    "source" : "",
+    "cover_image" : "",
+
+    "steps" : 
+    [
+        {
+            "instruction" : "",
+            "timer" : 0,
+            "image" : ""
+        }
+    ]
+}
