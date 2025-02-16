@@ -30,6 +30,17 @@ class User:
             inserted_tuple,
         )
 
+    def add_xp(self, cur, val: int):
+        cur.execute("UPDATE Users SET XP = XP + ? WHERE Id = ?", (val, self.id))
+
+        new_xp, new_level = cur.execute(
+            "SELECT XP, Level FROM Users WHERE Id = ?",
+            (self.id,),
+        ).fetchone()
+
+        self.xp = new_xp
+        self.level = new_level
+
     @classmethod
     def search(cls, cur, name_snip: str):
         user_query = cur.execute(

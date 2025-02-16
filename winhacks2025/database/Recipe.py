@@ -23,6 +23,17 @@ class Recipe:
             return None
         return cls(*recipe_query)
 
+    @classmethod
+    def from_name(cls, cur, recipe_name: str):
+        recipe_query = cur.execute(
+            "SELECT * FROM Recipes WHERE Name = ?",
+            (recipe_name,),
+        ).fetchone()
+
+        if recipe_query is None:
+            return None
+        return cls(*recipe_query)
+
     def write(self, cur):
         inserted_tuple = (
             self.display_name,
