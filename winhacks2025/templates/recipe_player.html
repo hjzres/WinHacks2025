@@ -57,13 +57,15 @@
             </template>
             <template x-if="card.type == 'finish'">
                 <div class="card-content card-finish">
-                    <p x-text="`Congrats! You just finished cooking ${recipe.name}!`"></p>
+                    <p x-text="`Congrats! You just finished cooking ${recipe.display_name}!`"></p>
                     <p x-text="`+${card.resp.new_xp-card.resp.old_xp} xp`"></p>
                     <template x-if="card.resp.old_level != card.resp.new_level">
                         <p x-text="`You leveled up to level ${card.resp.new_level}!`"></p>
                     </template>
-                    <p x-text="`You just ranked up to the ${'Copper Choppers'}!`"></p>
-                    <button>Cool!</button>
+                    <template x-if="card.resp.old_rank_number != card.resp.new_rank_number">
+                        <p x-text="`You ranked up to level ${card.resp.new_rank_number} - ${card.resp.new_rank_name}!`"></p>
+                    </template>
+                    <a href="/"><button>Cool!</button></a>
                 </div>
             </template>
         </div>

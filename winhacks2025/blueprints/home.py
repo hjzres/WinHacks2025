@@ -31,13 +31,13 @@ def home_page():
 	return render_template("home.html", recipes=recipes, recipe_length=recipe_length, name=name, level=level, xp_remaining=xp_remaining, rank=rank, rank_colour=rank_colour)
 	
 def get_rank(level):
-	if level < 2:
-		return ("I", "Bronze Baker")
-	elif level < 4:
-		return ("II", "Silver Slicer")
-	elif level < 8:
-		return ("III", "Golden Griller")
-	elif level < 16:
-		return ("IV", "Ruby Roaster")
-	else:
-		return ("V", "Diamond Dicers")
+    if level < 2:
+        return ("I", "Bronze Bakers")
+    elif level < 4:
+        return ("II", "Silver Slicers")
+    elif level < 8:
+        return ("III", "Golden Grillers")
+    elif level < 16:
+        return ("IV", "Ruby Roasters")
+    else:
+        return ("V", "Diamond Dicers")
