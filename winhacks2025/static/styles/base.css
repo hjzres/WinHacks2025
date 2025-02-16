@@ -105,9 +105,11 @@ dialog{
 }
 
 .start{
-	color:#00FF00;
-	background-color:rgb(15, 173, 15);
-	border: rgb(0, 255, 0) 2px solid;
+	color:#000000;
+	background:linear-gradient(rgb(164, 255, 164), rgb(105, 220, 105));
+	border: none;
+	filter: drop-shadow(0 0 4px #00000022) drop-shadow(4px 4px 2px #00000022);
+	border-radius: 1rem;
 	outline: none;
 	padding: 1rem 2rem;
 	font-size: 150%;
@@ -116,4 +118,8 @@ dialog{
 .start:hover{
 	cursor: pointer;
 	border:none;
+}
+
+.source{
+	font-size: small;
 }
