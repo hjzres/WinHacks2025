@@ -11,6 +11,7 @@ const image = document.getElementById('modal-image');
 const difficulty = document.getElementById('modal-difficulty');
 const time = document.getElementById('modal-time');
 const xp = document.getElementById('modal-xp');
+const startButton = document.getElementById('start-button');
 
 image.src = "";
 
@@ -40,6 +41,7 @@ for (let i = 0; i < openButton.length; i++) {
 				difficulty.innerHTML = "Difficulty: " + data.difficulty;
 				time.innerHTML = "Average Time to make: " + data.total_time + " minutes";
 				xp.innerHTML = "XP: " + data.xp_level;
+				startButton.href = `/recipes/${data.name}/play`;
 			});
 		});
 	});
@@ -56,6 +58,7 @@ modal.addEventListener('close', function() {
 	difficulty.innerHTML = "";
 	time.innerHTML = "";
 	xp.innerHTML = "";
+	startButton.href = "";
 });
 
 closeButton.addEventListener('click', function() {
