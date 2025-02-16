@@ -38,7 +38,7 @@ for (let i = 0; i < openButton.length; i++) {
 				source.innerHTML = data.source;
 				image.src = `/recipes/${data.name}/assets/Cover.jpg`;
 				difficulty.innerHTML = "Difficulty: " + data.difficulty;
-				time.innerHTML = "Average Time to make:" + data.total_time;
+				time.innerHTML = "Average Time to make: " + data.total_time + " minutes";
 				xp.innerHTML = "XP: " + data.xp_level;
 			});
 		});
