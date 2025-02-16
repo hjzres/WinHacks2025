@@ -12,6 +12,8 @@ from flask import (
 from winhacks2025.database import Recipe, User, get_cursor
 from winhacks2025.database.cursor import get_db
 
+from .home import get_rank
+
 recipes = Blueprint("recipes", __name__)
 
 allowed_characters = set(ascii_lowercase + digits + "_")
@@ -33,6 +35,9 @@ def recipe_player(recipe_name: str):
         old_level = usr.level
         usr.add_xp(cur, rec.xp_amount)
 
+        old_rank_number, old_rank_name = get_rank(old_level)
+        new_rank_number, new_rank_name = get_rank(usr.level)
+
         get_db().commit()
         return jsonify(
             {
@@ -40,6 +45,10 @@ def recipe_player(recipe_name: str):
                 "new_xp": usr.xp,
                 "old_level": old_level,
                 "new_level": usr.level,
+                "old_rank_number": old_rank_number,
+                "new_rank_number": new_rank_number,
+                "old_rank_name": old_rank_name,
+                "new_rank_name": new_rank_name,
             }
         )
 
