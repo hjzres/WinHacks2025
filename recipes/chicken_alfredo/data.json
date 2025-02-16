@@ -3,19 +3,25 @@
     "official" : true,
     "name" : "Chicken Alfredo",
     "recipe_requirements" : ["Alfredo Sauce"],
-    "description" : "Make a delightful, tasty, and simple recipe of chicken alfredo using ingredients that can be found at home. Recipe is simple to follow and fun to follow!",
+    "description" : "Make a delightful, tasty, and simple recipe of chicken alfredo using ingredients that can be found at home. The recipe is simple and fun to follow!",
     "total_time" : 30,
     "xp_level" : 250,
-    "difficulty" : "medium",
-    "ingredients" : ["Chicken Breast", "Spaghetti Pasta", "Alfredo Sauce", "Olive Oil", "Garlic", "Butter"],
+    "difficulty" : "Medium",
+    "ingredients" : ["Chicken breast", "Spaghetti pasta", "Alfredo sauce", "Olive oil", "Garlic", "Butter"],
     "source" : "https://www.delish.com/cooking/recipe-ideas/a53695/one-pot-chicken-alfredo-recipe/",
     "cover_image" : "Chicken_Alfredo.jpg",
 
     "steps" :
     [
         {
-            "instruction" : "Heat oil into a skillet at medium heat. Add butter and grate a small portion of garlic for flavour into the skillet. Add chicken breast into skillet and cook each side for 10 minutes. Season with salt and pepper.",
-            "timer" : 20,
+            "instruction" : "Heat oil into a skillet at medium heat, add butter and grate a small portion of garlic for flavour into the skillet.",
+            "timer" : null,
+            "image" : "Chicken_Skillet.jpg"
+        },
+
+        {
+            "instruction" : "Add chicken breast into skillet and cook each side for 10 minutes. Season with salt and pepper.",
+            "timer" : 10,
             "image" : "Chicken_Skillet.jpg"
         },
 
@@ -32,7 +38,7 @@
         },
 
         {
-            "instruction" : "Remove heat and add chicken to pan. Serve whenever you wish to eat.",
+            "instruction" : "Remove heat and add chicken to pan. Serve when cooled!",
             "timer" : null,
             "image" : "Chicken_Alfredo.jpg"
         }

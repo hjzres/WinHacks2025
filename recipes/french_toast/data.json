@@ -1,0 +1,28 @@
+
+{
+    "official" : true,
+    "name" : "French Toast",
+    "recipe_requirements" : [],
+    "description" : "A classic breakfast alternative to just eggs, but a delicious one as well! Follow this simple recipe, yielding as many pieces as you wish. Perfect for work or school.",
+    "total_time" : 15,
+    "xp_level" : 125,
+    "difficulty" : "Easy",
+    "ingredients" : ["8 Slices of bread", "4 Large eggs", "2/3 Cups of milk", "2 Teaspoons of cinnamon", "Butter", "Powdered sugar"],
+    "source" : "https://www.simplyrecipes.com/recipes/french_toast/",
+    "cover_image" : "French_Toast.jpg",
+
+    "steps" : 
+    [
+        {
+            "instruction" : "In a bowl wide enough to fit your bread slices, whisk the eggs, milk, and cinnamon together.",
+            "timer" : null,
+            "image" : "French_Toast_Mixture.jpg"
+        },
+
+        {
+            "instruction" : "Heat a skillet with some butter at mild heat. Dip a slice of bread into the mixture and then let both sides become a light-brown colour, 1 minute at a time.",
+            "timer" : 1,
+            "image" : "French_Toast_Skillet.jpg"
+        }
+    ]
+}
