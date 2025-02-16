@@ -56,3 +56,13 @@ class Recipe:
     @staticmethod
     def count(cur):
         return cur.execute("SELECT COUNT(*) FROM Recipe").fetchone()[0]
+    
+    @classmethod
+    def return_all(cls, cur):
+        recipe_query = cur.execute(
+            "SELECT * FROM Recipes"
+        ).fetchall()
+        recipe_list = []
+        for i in range(len(recipe_query)):
+            recipe_list.append(cls(*recipe_query[i]))
+        return recipe_list
