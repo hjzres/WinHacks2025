@@ -4,6 +4,7 @@ from dataclasses import dataclass, field
 @dataclass
 class Recipe:
     id: int
+    display_name: str
     name: str
     official: bool
     difficulty: str
