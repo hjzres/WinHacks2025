@@ -19,7 +19,7 @@
 		</nav>
 		<div class="user-info">
 			<div class="user-text">{{ name }}</div>
-			<div class="xp-text"><div class="romen">{{ rank }}</div> - Level {{ level }}: {{ xp_remaining }}/250xp</div>
+			<div class="xp-text"><div class="romen" style="background: linear-gradient(to right, {{ rank_colour }}); -webkit-background-clip: text; color: transparent;">{{ rank }}</div> - Level {{ level }}: {{ xp_remaining }}/250xp</div>
 		</div>
 	</header>
 	{% block content %} {% endblock %}

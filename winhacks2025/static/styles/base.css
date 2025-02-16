@@ -349,4 +349,5 @@ dialog{
 .romen{
 	font-family: "Gideon Roman";
 	display: inline-block;
+	text-shadow: none;
 }

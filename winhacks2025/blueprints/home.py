@@ -15,10 +15,20 @@ def home_page():
 	xp_remaining = user.xp - level * 250
 	rank_number, rank_name = get_rank(level)
 	rank = f"{rank_number} - {rank_name}"
+	if rank_number == "I":
+		rank_colour = "#996600, #CC8800"
+	elif rank_number == "II":
+		rank_colour = "#C9C0BB, #838996"
+	elif rank_number == "III":
+		rank_colour = "#FFD500, #B39500"
+	elif rank_number == "IV":
+		rank_colour = "#FF8080, #FF5533"
+	else:
+		rank_colour = "#B9F2FF, #0099E6"
 	
 	recipe_length = print(len(recipes))
 	
-	return render_template("home.html", recipes=recipes, recipe_length=recipe_length, name=name, level=level, xp_remaining=xp_remaining, rank=rank)
+	return render_template("home.html", recipes=recipes, recipe_length=recipe_length, name=name, level=level, xp_remaining=xp_remaining, rank=rank, rank_colour=rank_colour)
 	
 def get_rank(level):
 	if level < 2:
