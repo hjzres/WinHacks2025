@@ -5,28 +5,28 @@
     "recipe_requirements" : [],
     "description" : "Originally made in Italy by chef Caesar Cardini all the way back in the 1920s, the Caesar salad is a simple dish enjoyed by many internationally. Follow this easy recipe and enjoy your cheffin'!",
     "total_time" : 5,
-    "xp_level" : 150,
+    "xp_level" : 125,
     "difficulty" : "Easy",
-    "ingredients" : ["1-2 Heads of Romaine Lettuce", "Parmesan Cheese", "Croutons", "Store-Bought Caesar Salad Dressing"],
+    "ingredients" : ["1-2 Heads of romaine lettuce", "Parmesan cheese", "Croutons", "Store-bought caesar salad dressing"],
     "source" : "https://natashaskitchen.com/caesar-salad-recipe/", 
     "cover_image" : "Caesar_Salad.jpg",
 
     "steps" : 
     [
         {
-            "instruction" : "Chop romaine lettuce into small pieces and put them into a bowl.",
+            "instruction" : "Chop the romaine lettuce into small pieces and put them into a bowl.",
             "timer" : null,
             "image" : "Sliced_Romaine_Lettuce.jpg"
         },
 
         {
-            "instruction" : "Add caesar salad dressing into bowl and mix salad using a fork/tool of your choice until thoroughly mixed.",
+            "instruction" : "Add caesar salad dressing into bowl and mix the salad using a fork until thoroughly mixed.",
             "timer" : null,
             "image" : "Caesar_Salad_Dressing.jpg"
         },
 
         {
-            "instruction" : "Grate as much parmesan cheese as you wish into the bowl and add as much croutons as you want. Mix thoroughtly",
+            "instruction" : "Grate as much parmesan cheese as you wish into the bowl and add as much croutons as you want. Mix thoroughtly and serve!",
             "timer" : null,
             "image" : "Caesar_Salad.jpg"
         }

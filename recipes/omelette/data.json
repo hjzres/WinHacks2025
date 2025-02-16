@@ -1,0 +1,40 @@
+
+{
+    "official" : true,
+    "name" : "Omelette",
+    "recipe_requirements" : ["Optional ingredients"],
+    "description" : "This recipe is a nice refresher on a classic recipe done for years, an omelette! Check out this recipe to try it out or maybe add some steps to your existing routine.",
+    "total_time" : 10,
+    "xp_level" : 100,
+    "difficulty" : "Easy",
+    "ingredients" : ["3 Eggs", "1/4 Cup of milk", "Optional ingredients", "Condiments", "Oil"],
+    "source" : "",
+    "cover_image" : "Omelette.jpg",
+
+    "steps" : 
+    [
+        {
+            "instruction" : "Crack 3 eggs into a bowl and add milk, salt, and a bit of pepper. Whisk until thoroughly mixed.",
+            "timer" : null,
+            "image" : "Omelette_Whisk.jpg"
+        },
+
+        {
+            "instruction" : "Put oil in a skillet and heat to medium temperature. Once heated, add any extra ingredients you would like to include.",
+            "timer" : null,
+            "image" : "Omelette_Vegetables.jpg"
+        },
+
+        {
+            "instruction" : "Once additional ingredients are heated for about a minute, add the whisked eggs into the skillet and give it time to cook. Once egg starts solidifying, add some cheese on top.",
+            "timer" : 1,
+            "image" : "Omelette_Vegetables.jpg"
+        },
+
+        {
+            "instruction" : "Once fully cooked, serve with bread, side vegetables, and drinks.",
+            "timer" : null,
+            "image" : "Omelette.jpg"
+        }
+    ]
+}
