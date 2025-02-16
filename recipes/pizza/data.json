@@ -9,7 +9,7 @@
     "difficulty" : "Medium",
     "ingredients" : ["Active dry yeast", "Sugar", "All-purpose flour", "Tomato sauce", "Dried oregano", "Dried basil", "Mozzarella", "Toppings"],
     "source" : "https://www.tasteofhome.com/recipes/homemade-pizza/",
-    "cover_image" : "Pizza.jpg",
+    "cover_image" : "Cover_Pizza.jpg",
 
     "steps" : 
     [
@@ -52,7 +52,7 @@
         {
             "instruction" : "Bake pizza for 25-30 minutes, until crust is lightly browned. Once cooled, serve with drinks!",
             "timer" : 30,
-            "image" : "Pizza.jpg"
+            "image" : "Cover_Pizza.jpg"
         }
     ]
 }

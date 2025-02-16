@@ -9,7 +9,7 @@
     "difficulty" : "Easy",
     "ingredients" : ["5 thinly cut steaks", "2 ounces of all-purpose flower", "2 paprika teaspoons", "2 lightly beaten eggs", "9 ounces of dried breadcrumbs", "5 teaspoons of olive oil", "5 teaspoons of olive oil"],
     "source" : "https://www.food.com/recipe/beef-schnitzel-472051",
-    "cover_image" : "Beef_Schnitzel.jpg",
+    "cover_image" : "Cover_Beef_Schnitzel.jpg",
 
     "steps" : 
     [
@@ -22,7 +22,7 @@
         {
             "instruction" : "Crack the eggs into one plate, put the breadcrumbs in another, and mix the flour with paprika, salt, and pepper into another plate.",
             "timer" : null,
-            "image" : "Beef_Schnitzel.jpg"
+            "image" : "Cover_Beef_Schnitzel.jpg"
         },
 
         {

@@ -9,7 +9,7 @@
     "difficulty" : "Easy",
     "ingredients" : ["Parmesan cheese", "Butter", "Heavy cream", "Garlic", "Italian seasonings"],
     "source" : "https://bellyfull.net/homemade-alfredo-sauce/",
-    "cover_image" : "Cover_Image_Alfredo.jpg",
+    "cover_image" : "Cover_Alfredo.jpg",
 
     "steps" : 
     [
@@ -28,7 +28,7 @@
         {
             "instruction" : "Simmer and cook for 3-4 minutes until the sauce is thickened.",
             "timer" : 4,
-            "image" : "Cover_Image_Alfredo.jpg"
+            "image" : "Cover_Alfredo.jpg"
         },
 
         {

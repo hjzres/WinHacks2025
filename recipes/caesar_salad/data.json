@@ -9,7 +9,7 @@
     "difficulty" : "Easy",
     "ingredients" : ["1-2 Heads of romaine lettuce", "Parmesan cheese", "Croutons", "Store-bought caesar salad dressing"],
     "source" : "https://natashaskitchen.com/caesar-salad-recipe/", 
-    "cover_image" : "Caesar_Salad.jpg",
+    "cover_image" : "Cover_Caesar_Salad.jpg",
 
     "steps" : 
     [
@@ -28,7 +28,7 @@
         {
             "instruction" : "Grate as much parmesan cheese as you wish into the bowl and add as much croutons as you want. Mix thoroughtly and serve!",
             "timer" : null,
-            "image" : "Caesar_Salad.jpg"
+            "image" : "Cover_Caesar_Salad.jpg"
         }
     ]
 }

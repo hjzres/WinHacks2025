@@ -9,7 +9,7 @@
     "difficulty" : "Hard",
     "ingredients" : ["Filet mignon cut", "Olive oil", "Kosher salt", "Pepper", "Butter", "Garlic", "Rosemary"],
     "source" : "https://whitneybond.com/filet-mignon/",
-    "cover_image" : "Filet_Mignon.jpg",
+    "cover_image" : "Cover_Filet_Mignon.jpg",
 
     "steps" : 
     [
@@ -46,7 +46,7 @@
         {
             "instruction" : "Once cooked, spoon the melted garlic rosemary onto the steaks and transfer them to a cutting board to rest and cool down for 5-10 minutes. Once cooled, serve with vegetables and any other sides!",
             "timer" : 10,
-            "image" : "Filet_Mignon.jpg"
+            "image" : "Cover_Filet_Mignon.jpg"
         }
     ]
 }

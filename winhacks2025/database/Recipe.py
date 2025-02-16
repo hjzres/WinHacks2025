@@ -1,4 +1,4 @@
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 
 
 @dataclass
@@ -9,7 +9,7 @@ class Recipe:
     difficulty: str
     time: int
     xp_amount:int
-    recipe: str
+    recipe: str = field(repr=False)
 
     @classmethod
     def from_id(cls, cur, recipe_id: int):
