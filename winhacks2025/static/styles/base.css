@@ -34,7 +34,9 @@ img{
 
 .content-container{
 	display: flex;
-	align-items: flex-start;
+	align-items: center;
+	justify-content: space-between;
+	gap:2rem;
 }
 
 .recipe{
@@ -88,6 +90,7 @@ img{
 	position: absolute;
 	top: 1vh;
 	right: 1vw;
+	font-size: 1.5rem;
 }
 
 .close:hover{
@@ -103,11 +106,15 @@ dialog{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	justify-content: center;
+	gap: 3rem;
+	flex-grow: 1;
 }
 
 .recipe-image{
-	width: 40vw;
-	height: 40vh;
+	width: 20vw;
+	height: auto;
+	max-width: 40vw
 }
 
 .start{
@@ -127,5 +134,48 @@ dialog{
 }
 
 .source{
+	position: absolute;
+	bottom: 1vh;
 	font-size: small;
+}
+
+.title{
+	font-size: 4rem;
+	font-weight: bolder;
+	color: green;
+	top: 10px;
+	right: auto;
+}
+
+.description{
+	display:flex;
+	font-size: 1.5rem;
+	width:40vw;
+	align-self: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.bold{
+	font-weight: bolder;
+}
+
+.subtitle{
+	font-size: 2rem;
+	font-weight: bolder;
+	color: green;
+}
+
+.ingredients{
+	display:flex;
+	font-size: 1.5rem;
+	width:40vw;
+	align-self: center;
+	justify-content: center;
+	/* text-align: center; */
+}
+
+.ingredients ul{
+	list-style-type: circle;
+	margin-left: 1.5rem;
 }

@@ -23,13 +23,23 @@ for (let i = 0; i < openButton.length; i++) {
 			response.json().then(function(data){
 				modal_name.innerHTML = data.display_name;
 				description.innerHTML = data.description;
-				requirement.innerHTML = data.recipe_requirements;
-				ingredients.innerHTML = data.ingredients;
+				if(data.recipe_requirements != ""){
+					requirement.innerHTML = "Requirements: " + data.recipe_requirements;
+				} else {
+					requirement.innerHTML = "";
+				}
+				let ingredientsList = "<div class='subtitle'> Ingredients: </div><ul>";
+				data.ingredients.forEach(function(ingredient) {
+					ingredientsList += `<li>${ingredient}</li>`;
+				});
+				ingredientsList += "</ul>";
+				ingredients.innerHTML = ingredientsList;
+				console.log(data.recipe_requirements);
 				source.innerHTML = data.source;
 				image.src = `/recipes/${data.name}/assets/Cover.jpg`;
-				difficulty.innerHTML = data.difficulty;
-				time.innerHTML = data.total_time;
-				xp.innerHTML = data.xp_level;
+				difficulty.innerHTML = "Difficulty: " + data.difficulty;
+				time.innerHTML = "Average Time to make:" + data.total_time;
+				xp.innerHTML = "XP: " + data.xp_level;
 			});
 		});
 	});
