@@ -9,7 +9,7 @@
     "difficulty" : "Medium",
     "ingredients" : ["Chicken breast", "Spaghetti pasta", "Alfredo sauce", "Olive oil", "Garlic", "Butter"],
     "source" : "https://www.delish.com/cooking/recipe-ideas/a53695/one-pot-chicken-alfredo-recipe/",
-    "cover_image" : "Cover_Chicken_Alfredo.jpg",
+    "cover_image" : "Cover.jpg",
 
     "steps" :
     [
@@ -40,7 +40,7 @@
         {
             "instruction" : "Remove heat and add chicken to pan. Serve when cooled!",
             "timer" : null,
-            "image" : "Cover_Chicken_Alfredo.jpg"
+            "image" : "Cover.jpg"
         }
     ]
 }
