@@ -13,18 +13,21 @@ def home_page():
 	name = user.name
 	level = user.level
 	xp_remaining = user.xp - level * 250
-	if level < 2:
-		rank = "I"
-	elif level < 4:
-		rank = "II"
-	elif level < 8:
-		rank = "III"
-	elif level < 16:
-		rank = "IV"
-	else:
-		rank = "VI"
+	rank_number, rank_name = get_rank(level)
+	rank = f"{rank_number} - {rank_name}"
 	
-	print(recipes)
 	recipe_length = print(len(recipes))
 	
 	return render_template("home.html", recipes=recipes, recipe_length=recipe_length, name=name, level=level, xp_remaining=xp_remaining, rank=rank)
+	
+def get_rank(level):
+	if level < 2:
+		return ("I", "Bronze Baker")
+	elif level < 4:
+		return ("II", "Silver Slicer")
+	elif level < 8:
+		return ("III", "Golden Griller")
+	elif level < 16:
+		return ("IV", "Ruby Roaster")
+	else:
+		return ("V", "Diamond Dicers")
