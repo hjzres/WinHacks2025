@@ -1,52 +1,53 @@
 
 {
-    "official" : true,
-    "name" : "Filet Mignon",
-    "recipe_requirements" : [],
-    "description" : "The filet mignon steak is a typically smaller portion taken from the smaller loins of tenderloin, and requires great precision and timing to prepare correctly. This steak is usually cooked to medium rare, being the most popular option for this dish. This recipe requires patience, but can be done well if enough attention and care is given!",
-    "total_time" : 25,
-    "xp_level" : 450,
-    "difficulty" : "Hard",
-    "ingredients" : ["Filet mignon cut", "Olive oil", "Kosher salt", "Pepper", "Butter", "Garlic", "Rosemary"],
-    "source" : "https://whitneybond.com/filet-mignon/",
-    "cover_image" : "Cover.jpg",
+	"official" : true,
+	"display_name" : "Filet Mignon",
+	"name" : "filet_mignon",
+	"recipe_requirements" : [],
+	"description" : "The filet mignon steak is a typically smaller portion taken from the smaller loins of tenderloin, and requires great precision and timing to prepare correctly. This steak is usually cooked to medium rare, being the most popular option for this dish. This recipe requires patience, but can be done well if enough attention and care is given!",
+	"total_time" : 25,
+	"xp_level" : 450,
+	"difficulty" : "Hard",
+	"ingredients" : ["Filet mignon cut", "Olive oil", "Kosher salt", "Pepper", "Butter", "Garlic", "Rosemary"],
+	"source" : "https://whitneybond.com/filet-mignon/",
+	"cover_image" : "Cover.jpg",
 
-    "steps" : 
-    [
-        {
-            "instruction" : "Remove the steaks from their packaging and lay them on a cutting board. If they were refrigerated, let them rest for 45 minutes to allow for even cooking.",
-            "timer" : 45,
-            "image" : "Filet_Mignon_Cuts.jpg"
-        },
+	"steps" : 
+	[
+		{
+			"instruction" : "Remove the steaks from their packaging and lay them on a cutting board. If they were refrigerated, let them rest for 45 minutes to allow for even cooking.",
+			"timer" : 45,
+			"image" : "Filet_Mignon_Cuts.jpg"
+		},
 
-        {
-            "instruction" : "Heat olive oil in a cast iron skillet. While its heating, season the steak by adding salt and pepper on both sides.",
-            "timer" : null,
-            "image" : "Seasoned_Filet_Mignon.jpg"
-        },
+		{
+			"instruction" : "Heat olive oil in a cast iron skillet. While its heating, season the steak by adding salt and pepper on both sides.",
+			"timer" : null,
+			"image" : "Seasoned_Filet_Mignon.jpg"
+		},
 
-        {
-            "instruction" : "Once the skillet is hot, add the steaks into the skillet and cook each side for 2 minutes to get a perfect crust. Do not interfere with the steaks at all during this time.",
-            "timer" : 2,
-            "image" : "Filet_Mignon_Crust.jpg"
-        },
+		{
+			"instruction" : "Once the skillet is hot, add the steaks into the skillet and cook each side for 2 minutes to get a perfect crust. Do not interfere with the steaks at all during this time.",
+			"timer" : 2,
+			"image" : "Filet_Mignon_Crust.jpg"
+		},
 
-        {
-            "instruction" : "Preheat an oven to 400 degrees Fahrenheit.",
-            "timer" : null,
-            "image" : "Oven.jpg"
-        },
+		{
+			"instruction" : "Preheat an oven to 400 degrees Fahrenheit.",
+			"timer" : null,
+			"image" : "Oven.jpg"
+		},
 
-        {
-            "instruction" : "Take the skillet off the stove and add rosemary, butter and garlic to the skillet with the steaks still within. Cook for 10 minutes until you have a medium-rare steak.",
-            "timer" : 10,
-            "image" : "Filet_Mignon_Medium_Rare.jpg"
-        },
+		{
+			"instruction" : "Take the skillet off the stove and add rosemary, butter and garlic to the skillet with the steaks still within. Cook for 10 minutes until you have a medium-rare steak.",
+			"timer" : 10,
+			"image" : "Filet_Mignon_Medium_Rare.jpg"
+		},
 
-        {
-            "instruction" : "Once cooked, spoon the melted garlic rosemary onto the steaks and transfer them to a cutting board to rest and cool down for 5-10 minutes. Once cooled, serve with vegetables and any other sides!",
-            "timer" : 10,
-            "image" : "Cover.jpg"
-        }
-    ]
+		{
+			"instruction" : "Once cooked, spoon the melted garlic rosemary onto the steaks and transfer them to a cutting board to rest and cool down for 5-10 minutes. Once cooled, serve with vegetables and any other sides!",
+			"timer" : 10,
+			"image" : "Cover.jpg"
+		}
+	]
 }

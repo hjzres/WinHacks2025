@@ -18,10 +18,10 @@
 </div>
 <div class="recipe-container">
 	{% for recipe in recipes %}
-	<div class="recipe outlined">
-		<img src="/recipes/{{recipe}}/assets/Cover.jpg" alt="">
+	<div class="recipe outlined" data-name="{{recipe.name}}">
+		<img src="/recipes/{{recipe.name}}/assets/Cover.jpg" alt="">
 		<div class="text-container">
-			<p>Name</p>
+			<p>{{recipe.display_name}}</p>
 		</div>
 	</div>
 	{% endfor %}
@@ -31,31 +31,31 @@
 			<div class="content-container">
 				<div class="content-container-vertical">
 					<div class="text-container">
-						<p class="bigger">Name</p>
+						<p class="bigger" id="modal-name">Name</p>
 					</div>
 					<div class="text-container">
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet autem repellendus a aliquid molestiae ipsam, eius dignissimos alias dolorem laudantium fuga animi, voluptas corrupti facilis iure officiis soluta sunt. Nam.</p>
+						<p id="modal-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet autem repellendus a aliquid molestiae ipsam, eius dignissimos alias dolorem laudantium fuga animi, voluptas corrupti facilis iure officiis soluta sunt. Nam.</p>
 					</div>
 					<div class="text-container">
-						<p>Recipe Requirement: </p>
+						<p id="modal-requirement">Recipe Requirement: </p>
 					</div>
 					<div class="text-container">
-						<p>Ingredients: </p>
+						<p id="modal-ingredients">Ingredients: </p>
 					</div>
 					<div class="text-container source">
-						<p>Source: </p>
+						<p id="modal-source">Source: </p>
 					</div>
 				</div>
 				<div class="content-container-vertical">
-					<img src="/static/images/cooking.jpg" alt="" class="recipe-image">
+					<img src="" alt="" class="recipe-image" id="modal-image">
 					<div class="text-container">
-						<p>Difficulty: </p>
+						<p id="modal-difficulty">Difficulty: </p>
 					</div>
 					<div class="text-container">
-						<p>Average Time: </p>
+						<p id="modal-time">Average Time: </p>
 					</div>
 					<div class="text-container">
-						<p>XP Gained: </p>
+						<p id="modal-xp">XP Gained: </p>
 					</div>
 					<button class="start">Start</button>
 				</div>
