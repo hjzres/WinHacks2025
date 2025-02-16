@@ -101,7 +101,7 @@ body {
   color: black;
 
   margin: 2rem 4rem 0 4rem;
-  animation: bgColorAnimation 45s ease-in infinite;
+  animation: bgColorAnimation 20s ease-in infinite;
 }
 
 @keyframes bgColorAnimation {
