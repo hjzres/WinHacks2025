@@ -1,7 +1,7 @@
 import sqlite3
 
-from Recipe import Recipe
-from User import User
+from recipe import Recipe
+from user import User
 
 con = sqlite3.connect("./recipes.db")
 cur = con.cursor()
