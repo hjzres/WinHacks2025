@@ -1,0 +1,108 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#recipe-player {
+    height: 80vh;
+    width: 90vw;
+
+    background-color: #FFE;
+    border-radius: 2rem;
+
+    padding: 1rem;
+
+    filter: drop-shadow(0.5rem 0.5rem 0.25rem #00001122) drop-shadow(0 0 0.5rem #00001122);
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#recipe-player .card {
+    color: #111111;
+    background: linear-gradient(#EEAAAA, #EE90A0);
+
+    filter: drop-shadow(0 0 4px #00000022) drop-shadow(4px 4px 2px #00000022);
+
+    font-size: 2rem;
+
+    padding: 1rem;
+    border-radius: 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-grow: 1;
+    gap: 1rem;
+
+    transition: transform 0.2s;
+    /* transition: flex-grow 0.2s; */
+
+
+    overflow-y: auto;
+}
+
+#recipe-player .card:has(>.card-collect) {
+    align-items: flex-start;
+}
+
+.card-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 1em;
+
+    
+}
+
+.card-collect {
+
+}
+
+.checkbox {
+    height: 4em;
+    width: 4em;
+    flex-grow: 0;
+    flex-shrink: 0;
+
+    border-radius: 50%;
+    border: none;
+    outline: none;
+}
+
+.card.offscreen {
+    transform: translate(-200%);
+}
+
+.card ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    align-items: stretch;
+
+}
+
+.collectable {
+    padding: 1rem;
+    background-color: #FFE;
+    border-radius: 2rem;
+
+    transition: background-color 0.1s;
+}
+
+.collectable.completed {
+    background-color: #9E9;
+}

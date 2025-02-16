@@ -1,12 +1,38 @@
-{% extends 'base.html' %}
+{% extends 'minimal_base.html' %}
 {% block head %}
     <script>
         const recipeName = "{{ recipe_name }}";
     </script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.js"></script>
+    <link rel="stylesheet" href="/static/styles/recipeplayer.css">
+    
     <script src="/static/scripts/recipe_player.js"></script>
 {% endblock %}
 {% block content %}
-    <main id="recipe-player">
-
+    <main id="recipe-player" x-data="{recipe: {}, currentCards: [], currentStep: 0, cardCounter: 0}" x-init="initialize($data)">
+        <template x-for="(card, index) in currentCards" :key="card.id">
+            <div class="card" x-data="{offscreen: true}" :class="{'offscreen': offscreen}" x-init="$nextTick(() => {offscreen=false})">
+                <template x-if="card.type == 'step'">
+                    <div class="card-content card-step">
+                        <p x-text="card.text">Cook egg</p>
+                        <button class="checkbox" @click="stepSubmit($data)"></button>
+                    </div>
+                    
+                </template>
+                <template x-if="card.type == 'collect'">
+                    <div class="card-content card-collect">
+                        <ul>
+                            <template x-for="item in Object.keys(card.items)">
+                                <li :class="{ 'completed': card.items[item] }" class="collectable" x-text="item" @click="collectableClick($data)">
+    
+                                </li>  
+                            </template>
+                        </ul>
+                    </div>
+                </template>
+            </div>
+            
+            <p x-text="card.type" style="color: black"></p>
+        </template>
     </main>
 {% endblock %}
