@@ -28,6 +28,7 @@ class Recipe:
     @classmethod
     def write(self, cur):
         inserted_tuple = (
+            self.display_name,
             self.name,
             self.official,
             self.difficulty,
@@ -37,7 +38,7 @@ class Recipe:
         )
         
         cur.execute(
-            "INSERT INTO Recipes(Name, XP) "
+            "INSERT INTO Recipes(DisplayName, Name, Offical, Difficulty, Time, XP_Amount, Recipe) "
             "VALUES (?, ?, ?, ?, ?, ?)",
             inserted_tuple,
         )
