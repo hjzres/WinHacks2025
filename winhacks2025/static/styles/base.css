@@ -2,7 +2,90 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap');
+@media (max-width: 768px) {
+	body {
+		margin: 1rem;
+	}
 
+	#main {
+		flex-direction: column;
+	}
+
+	img {
+		width: 90vw;
+		height: auto;
+	}
+
+	.content-container {
+		flex-direction: column;
+		gap: 1rem;
+	}
+
+	.recipe {
+		width: 80vw;
+		height: auto;
+	}
+
+	.bigger {
+		font-size: 1.2rem;
+	}
+
+	.recipe-container {
+		flex-direction: column;
+		gap: 1rem;
+	}
+
+	dialog {
+		width: 90vw;
+		height: 90vh;
+	}
+
+	.recipe-image {
+		width: 80vw;
+		max-width: 80vw;
+	}
+
+	.start {
+		font-size: 1rem;
+		padding: 0.5rem 1rem;
+	}
+
+	.title {
+		font-size: 2rem;
+	}
+
+	.description, .ingredients {
+		width: 90vw;
+		font-size: 1rem;
+	}
+
+	.subtitle {
+		font-size: 1.5rem;
+	}
+
+	.website-description {
+		font-size: 1.5vh;
+	}
+
+	#nav-title {
+		font-size: 20px;
+	}
+
+	.user-info {
+		font-size: 1rem;
+	}
+	#nav-title {
+		font-size: 1.5rem;
+	}
+
+	.recipe-container {
+		font-size: 1rem;
+	}
+
+	dialog {
+		font-size: 1rem;
+	}
+}
 html, body{
 	height: 100vh;
 }
