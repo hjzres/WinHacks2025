@@ -70,6 +70,10 @@ body {
 
 }
 
+.monospace {
+    font-family: "Fira Mono";
+}
+
 .checkbox {
     height: 4em;
     width: 4em;
@@ -97,12 +101,84 @@ body {
 
 .collectable {
     padding: 1rem;
-    background-color: #FFE;
+    background: linear-gradient(to bottom right, #FFE, #EED);
     border-radius: 2rem;
 
-    transition: background-color 0.1s;
+    transition: background 0.1s;
+
+    filter: drop-shadow(-4px -4px 4px #FFFFFF22) drop-shadow(4px 4px 2px #00000022);
+}
+
+.collectable:hover {
+    background: linear-gradient(to bottom right, #EED, #FFE);
+}
+
+.collectable:active {
+    background: linear-gradient(to bottom right, #DDC, #EED);
 }
 
 .collectable.completed {
-    background-color: #9E9;
+    background: linear-gradient(to bottom right, #9E9, #8D8);
+}
+
+.collectable.completed:hover {
+    background: linear-gradient(to bottom right, #8D8, #9E9);
+}
+
+.collectable.completed:active {
+    background: linear-gradient(to bottom right, #7C7, #8D8);
+}
+
+.card-timer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+}
+
+.card-timer p {
+    font-size: 3em;
+}
+
+.timer-button-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5em;
+}
+
+button {
+    background: linear-gradient(to bottom right, #FFE, #EED);
+    border: none;
+    outline: none;
+
+    /* filter: drop-shadow(0 0 4px #00000022) drop-shadow(4px 4px 2px #00000022); */
+    filter: drop-shadow(-4px -4px 4px #FFFFFF22) drop-shadow(4px 4px 2px #00000022);
+
+    transition: background 0.1s;
+}
+
+button:hover {
+    background: linear-gradient(to bottom right, #EED, #FFE);
+}
+
+
+button:active {
+    background: linear-gradient(to bottom right, #DDC, #EED);
+}
+
+.timer-button {
+    font-size: 0.75em;
+    border-radius: 0.5em;
+    padding: 0.25em;
+}
+
+.card-finish {
+    flex-direction: column;
+}
+
+.card-finish button {
+    font-size: 0.75em;
+    border-radius: 0.5em;
+    padding: 0.25em;
 }
