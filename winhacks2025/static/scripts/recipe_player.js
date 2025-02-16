@@ -43,17 +43,39 @@ function initialize(data) {
 
 }
 
-function addCard(data) {
-    let step = data.recipe.steps[data.currentStep];
-    data.currentCards.push(
-        {
-            id: data.cardCounter,
-            type: 'step',
-            text: step.instruction
-        }
-    );
-    data.currentStep++;
+function addCard(data, card) {
+    card.id = data.cardCounter;
+    data.currentCards.push(card);
     data.cardCounter++;
+}
+
+function nextStep(data) {
+    if (data.currentStep >= data.recipe.steps.length){
+        addCard(data, {
+            type: 'finish',
+            
+        })
+        return;
+    }
+    let step = data.recipe.steps[data.currentStep];
+
+    if (step.timer != null) {
+        addCard(data, {
+            type: 'timer',
+            time: step.timer
+        })
+    }
+
+    addCard(data, {
+        type: 'step',
+        text: step.instruction
+    })
+    data.currentStep++;
+}
+
+function nextCard(data) {
+    data.currentCards.splice(data.index, 1);
+    nextStep(data);
 }
 
 function collectableClick(data) {
@@ -64,12 +86,32 @@ function collectableClick(data) {
     }
 }
 
-function nextCard(data) {
-    data.currentCards.splice(data.index, 1);
-    addCard(data);
-}
-
 function stepSubmit(data) {
     data.offscreen = true;
     setTimeout(() => nextCard(data), 300);
+}
+
+function formatTime(time) {
+    let left = time;
+
+    let mins = String(Math.floor(left/60000));
+    left %= 60000;
+
+    let secs = String(Math.floor(left/1000)).padStart(2, "0");
+
+    return `${mins}:${secs}`
+}
+
+function initTimer(data) {
+    setInterval(function() {
+        let delta = Date.now() - data.startTime;
+        if (data.running) {
+            data.timeLeft = data.lastTime - delta;
+        }
+    }, 10);
+}
+
+function removeCard(data) {
+    data.offscreen = true;
+    setTimeout(() => data.currentCards.splice(data.index, 1), 300);
 }

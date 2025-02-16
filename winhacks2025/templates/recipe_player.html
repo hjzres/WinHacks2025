@@ -1,38 +1,69 @@
 {% extends 'minimal_base.html' %}
 {% block head %}
-    <script>
-        const recipeName = "{{ recipe_name }}";
-    </script>
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.js"></script>
-    <link rel="stylesheet" href="/static/styles/recipeplayer.css">
-    
-    <script src="/static/scripts/recipe_player.js"></script>
+<script>
+    const recipeName = "{{ recipe_name }}";
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.js"></script>
+<link rel="stylesheet" href="/static/styles/recipeplayer.css">
+
+<script src="/static/scripts/recipe_player.js"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
 {% endblock %}
 {% block content %}
-    <main id="recipe-player" x-data="{recipe: {}, currentCards: [], currentStep: 0, cardCounter: 0}" x-init="initialize($data)">
-        <template x-for="(card, index) in currentCards" :key="card.id">
-            <div class="card" x-data="{offscreen: true}" :class="{'offscreen': offscreen}" x-init="$nextTick(() => {offscreen=false})">
-                <template x-if="card.type == 'step'">
-                    <div class="card-content card-step">
-                        <p x-text="card.text">Cook egg</p>
-                        <button class="checkbox" @click="stepSubmit($data)"></button>
+<main id="recipe-player" x-data="{recipe: {}, currentCards: [], currentStep: 0, cardCounter: 0}"
+    x-init="initialize($data)">
+    <template x-for="(card, index) in currentCards" :key="card.id">
+        <div class="card" x-data="{offscreen: true}" :class="{'offscreen': offscreen}"
+            x-init="$nextTick(() => {offscreen=false})">
+            <template x-if="card.type == 'step'">
+                <div class="card-content card-step">
+                    <p x-text="card.text">Cook egg</p>
+                    <button class="checkbox" @click="stepSubmit($data)"></button>
+                </div>
+
+            </template>
+            <template x-if="card.type == 'collect'">
+                <div class="card-content card-collect">
+                    <ul>
+                        <template x-for="item in Object.keys(card.items)">
+                            <li :class="{ 'completed': card.items[item] }" class="collectable" x-text="item"
+                                @click="collectableClick($data)">
+
+                            </li>
+                        </template>
+                    </ul>
+                </div>
+            </template>
+            <template x-if="card.type == 'timer'">
+                <div class="card-content card-timer"
+                    x-data="{originalTime: card.time * 60000, timeLeft: card.time * 60000, running: false, startTime: null, lastTime: card.time * 60000}"
+                    x-init="initTimer($data)">
+                    <p class="monospace" x-text="formatTime(timeLeft)"></p>
+                    <div class="timer-button-group">
+                        <button class="timer-button" @click="lastTime -= 15000">-15</button>
+                        <button class="timer-button"
+                        @click="running = false; startTime = null; timeLeft = originalTime; lastTime = originalTime">Reset</button>
+                        <button class="timer-button"
+                        @click="running = !running; startTime = Date.now(); lastTime = timeLeft"
+                        x-text="running ? 'Stop' : 'Start'"></button>
+                        <button class="timer-button" @click="removeCard($data)">Skip</button>
+                        <button class="timer-button" @click="lastTime += 15000">+15</button>
                     </div>
-                    
-                </template>
-                <template x-if="card.type == 'collect'">
-                    <div class="card-content card-collect">
-                        <ul>
-                            <template x-for="item in Object.keys(card.items)">
-                                <li :class="{ 'completed': card.items[item] }" class="collectable" x-text="item" @click="collectableClick($data)">
-    
-                                </li>  
-                            </template>
-                        </ul>
-                    </div>
-                </template>
-            </div>
-            
-            <p x-text="card.type" style="color: black"></p>
-        </template>
-    </main>
+                </div>
+            </template>
+            <template x-if="card.type == 'finish'">
+                <div class="card-content card-finish">
+                    <p x-text="`Congrats! You just finished cooking ${recipe.name}!`"></p>
+                    <p x-text="`+${999} exp`"></p>
+                    <p x-text="`You just ranked up to the ${'Copper Choppers'}!`"></p>
+                    <button>Cool!</button>
+                </div>
+            </template>
+        </div>
+    </template>
+</main>
 {% endblock %}
