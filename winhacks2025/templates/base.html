@@ -18,8 +18,8 @@
 			<a id="nav-title" href="/">Ranked Kitchen</a>
 		</nav>
 		<div class="user-info">
-			<div class="user-text">User</div>
-			<div class="xp-text">I - Level 1: 0/250xp</div>
+			<div class="user-text">{{ name }}</div>
+			<div class="xp-text"><div class="romen">{{ rank }}</div> - Level {{ level }}: {{ xp_remaining }}/250xp</div>
 		</div>
 	</header>
 	{% block content %} {% endblock %}
