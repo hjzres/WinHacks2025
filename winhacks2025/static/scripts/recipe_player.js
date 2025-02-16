@@ -10,6 +10,7 @@
 // loadRecipe();
 
 const recipeURL = `/recipes/${recipeName}/assets/data.json`;
+const recipePlayURL = `/recipes/${recipeName}/play`;
 
 // fetch(recipeURL).then(function (response) {
 //     response.json().then(function (data) {
@@ -49,12 +50,26 @@ function addCard(data, card) {
     data.cardCounter++;
 }
 
+function endCard(data, resp) {
+    console.log(resp);
+    addCard(data, {
+        type: 'finish',
+        resp: resp
+    })
+}
+
 function nextStep(data) {
     if (data.currentStep >= data.recipe.steps.length){
-        addCard(data, {
-            type: 'finish',
-            
-        })
+        
+        fetch(recipePlayURL, {
+            method: 'POST',
+            body: JSON.stringify({})
+          }).then(function(response) {
+            response.json().then(function(recv) {
+                endCard(data, recv);
+            })
+          })
+
         return;
     }
     let step = data.recipe.steps[data.currentStep];

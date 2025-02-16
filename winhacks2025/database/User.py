@@ -10,29 +10,36 @@ class User:
 
     @classmethod
     def from_id(cls, cur, user_id: int):
-        
         user_query = cur.execute(
             "SELECT * FROM Users WHERE Id = ?",
             (user_id,),
         ).fetchone()
-        
+
         if user_query is None:
             return None
         return cls(*user_query)
-    
-    @classmethod
+
     def write(self, cur):
         inserted_tuple = (
             self.name,
             self.xp,
         )
-        
+
         cur.execute(
-            "INSERT INTO Users(Name, XP) "
-            "VALUES (?, ?)",
+            "INSERT INTO Users(Name, XP) VALUES (?, ?)",
             inserted_tuple,
         )
-    
+
+    def add_xp(self, cur, val: int):
+        cur.execute("UPDATE Users SET XP = XP + ? WHERE Id = ?", (val, self.id))
+
+        new_xp, new_level = cur.execute(
+            "SELECT XP, Level FROM Users WHERE Id = ?",
+            (self.id,),
+        ).fetchone()
+
+        self.xp = new_xp
+        self.level = new_level
 
     @classmethod
     def search(cls, cur, name_snip: str):
@@ -43,11 +50,7 @@ class User:
         for i in range(len(user_query)):
             user_list.append(cls(*user_query[i]))
         return user_list
-    
 
     @staticmethod
     def count(cur):
         return cur.execute("SELECT COUNT(*) FROM Users").fetchone()[0]
-    
-
-
